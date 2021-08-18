@@ -1,0 +1,27 @@
+{
+  "name": "typescriptcodex",
+  "version": "1.0.0",
+  "description": "TypeScriptCodex",
+  "main": "index.js",
+  "scripts": {
+    "start": "node dist/app/index.js",
+    "build": "rimraf ./dist && tsc && rollup -c"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nifx28/TypeScriptCodex.git"
+  },
+  "author": "Ellyn Riraille",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nifx28/TypeScriptCodex/issues"
+  },
+  "homepage": "https://github.com/nifx28/TypeScriptCodex#readme",
+  "devDependencies": {
+    "@open-wc/building-rollup": "^1.10.0",
+    "deepmerge": "^4.2.2",
+    "rimraf": "^3.0.2",
+    "rollup": "^2.56.2",
+    "typescript": "^4.3.5"
+  }
+}
