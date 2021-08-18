@@ -1,4 +1,4 @@
-class Greeter {
+export class Greeter {
   greeting: string
 
   constructor(message: string) {
@@ -10,5 +10,13 @@ class Greeter {
   }
 }
 
-let test = new Greeter("world!")
-console.log(test.greet())
+export function greeter(func: (msg: string) => void) {
+  let greeter = new Greeter("world!")
+  func(`${greeter.constructor.name}: ${greeter.greet()}`)
+}
+
+export function print(message: string) {
+  console.log(message)
+}
+
+greeter(print)
